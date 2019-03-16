@@ -1,0 +1,37 @@
+cc_binary {
+    name: "android.hardware.health@2.0-service.baffinlite",
+    init_rc: ["android.hardware.health@2.0-service.baffinlite.rc"],
+    proprietary: true,
+    relative_install_path: "hw",
+    srcs: [
+        "HealthService.cpp",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+
+    static_libs: [
+        "android.hardware.health@2.0-impl",
+        "android.hardware.health@1.0-convert",
+        "libhealthservice",
+        "libbatterymonitor",
+    ],
+
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libhidlbase",
+        "libhidltransport",
+        "libutils",
+        "android.hardware.health@2.0",
+    ],
+
+    header_libs: ["libhealthd_headers"],
+
+    // Uncomment the following to remove healthd from the build.
+    // overrides: [
+    //     "healthd",
+    // ],
+}

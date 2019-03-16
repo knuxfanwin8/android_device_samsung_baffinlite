@@ -33,9 +33,9 @@ PRODUCT_COPY_FILES += \
 	device/samsung/baffinlite/keylayouts/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
 
 # Insecure ADBD
-ADDITIONAL_DEFAULT_PROPERTIES += \
-	ro.adb.secure=3 \
-	persist.sys.root_access=3
+#ADDITIONAL_DEFAULT_PROPERTIES += \
+#	ro.adb.secure=3 \
+#	persist.sys.root_access=3
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -147,6 +147,10 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_baffinlite
+PRODUCT_NAME := lineage_baffinlite
 PRODUCT_DEVICE := baffinlite
+PRODUCT_BRAND := Samsung
+PRODUCT_MODEL := GT-I9060
+PRODUCT_MANUFACTURER := samsung
+TARGET_DEVICE := baffinlite
+

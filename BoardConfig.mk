@@ -3,6 +3,10 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/samsung/baffinlite/BoardConfigVendor.mk
 
+RODUCT_NAME := lineage_baffinlite
+PRODUCT_DEVICE := baffinlite
+BOARD_VENDOR := samsung
+
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := java
@@ -17,7 +21,7 @@ TARGET_BOOTLOADER_BOARD_NAME := java
 BOARD_KERNEL_CMDLINE := 
 BOARD_KERNEL_BASE := 0x81e00000
 BOARD_KERNEL_PAGESIZE := 4096
-
+BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_USERIMAGES_USE_EXT4 := true
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
@@ -111,9 +115,12 @@ BOARD_RIL_CLASS := ../../../device/samsung/baffinlite/ril/
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/baffinlite/rootdir/fstab.java_ss_baffinlite
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
+# Temp fix for not fitting in partition
+BOARD_HAS_NO_REAL_SDCARD := true 
 
 # healthd
-BOARD_HAL_STATIC_LIBRARIES := libhealthd.java
+#BOARD_HAL_STATIC_LIBRARIES := libhealthd.java
+# ^ tmp fix for issue #2
 
 # CMHW
 BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ device/samsung/baffinlite/cmhw/
