@@ -115,8 +115,6 @@ BOARD_RIL_CLASS := ../../../device/samsung/baffinlite/ril/
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/baffinlite/rootdir/fstab.java_ss_baffinlite
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
-# Temp fix for not fitting in partition
-BOARD_HAS_NO_REAL_SDCARD := true 
 
 # healthd
 #BOARD_HAL_STATIC_LIBRARIES := libhealthd.java
