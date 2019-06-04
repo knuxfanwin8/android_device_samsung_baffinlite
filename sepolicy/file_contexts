@@ -29,8 +29,8 @@
 /sys/devices/platform/bcmbt-rfkill.1/rfkill/rfkill0/type -- u:object_r:sysfs_bluetooth_writable:s0
 
 /dev/ttyS0                                          u:object_r:hci_attach_dev:s0
-/dev/ttyS1                                          u:object_r:gps_device:s0
-/dev/bcm_gps                                        u:object_r:gps_device:s0
+#/dev/ttyS1                                          u:object_r:gps_device:s0
+#/dev/bcm_gps                                        u:object_r:gps_device:s0
 
 /dev/bcm_log                                        u:object_r:radio_device:s0
 /dev/block/mmcblk0p1                                u:object_r:radio_device:s0
@@ -39,7 +39,7 @@
 
 /dev/socket/rild1                                   u:object_r:rild_socket:s0
 
-/sys/devices/platform/mdnie/mdnie/mdnie/cabc --     u:object_r:sysfs_writable:s0
+#/sys/devices/platform/mdnie/mdnie/mdnie/cabc --     u:object_r:sysfs_writable:s0
 
 # /system files
 /system/bin/geomagneticd                            u:object_r:geomagneticd_exec:s0
@@ -48,4 +48,4 @@
 /system/bin/tvserver                                u:object_r:tvserver_exec:s0
 /system/bin/bkmgrd                                  u:object_r:bkmgrd_exec:s0
 /system/bin/vclmk                                   u:object_r:vclmk_exec:s0
-/system/bin/glgps                                   u:object_r:gpsd_exec:s0
+#/system/bin/glgps                                   u:object_r:gpsd_exec:s0

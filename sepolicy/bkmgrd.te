@@ -1,4 +1,4 @@
-type bkmgrd, domain;
+type bkmgrd;
 type bkmgrd_exec, file_type, exec_type;
 
 init_daemon_domain(bkmgrd)

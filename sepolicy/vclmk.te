@@ -1,4 +1,4 @@
-type vclmk, domain;
+type vclmk;
 type vclmk_exec, file_type, exec_type;
 
 init_daemon_domain(vclmk)
