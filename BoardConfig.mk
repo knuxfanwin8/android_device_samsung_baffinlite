@@ -123,7 +123,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_stora
 # ^ tmp fix for issue #2
 
 # CMHW
-BOARD_HARDWARE_CLASS := hardware/samsung/lineagehw/ device/samsung/baffinlite/lineagehw/
+BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ device/samsung/baffinlite/cmhw/
 
 # GPS
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/baffinlite/include
