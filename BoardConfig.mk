@@ -15,6 +15,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a7
 TARGET_CPU_SMP := true
+ARCH_ARM_HAVE_NEON := true
 
 TARGET_BOOTLOADER_BOARD_NAME := java
 
@@ -122,7 +123,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_stora
 # ^ tmp fix for issue #2
 
 # CMHW
-BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ device/samsung/baffinlite/cmhw/
+BOARD_HARDWARE_CLASS := hardware/samsung/lineagehw/ device/samsung/baffinlite/lineagehw/
 
 # GPS
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/baffinlite/include
@@ -162,7 +163,7 @@ TW_THEME := portrait_mdpi
 DEVICE_RESOLUTION := 480x800
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
-HAVE_SELINUX := false
+HAVE_SELINUX := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_INCLUDE_JB_CRYPTO := true
 TW_NO_REBOOT_BOOTLOADER := true
