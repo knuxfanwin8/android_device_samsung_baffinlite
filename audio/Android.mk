@@ -10,14 +10,14 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libutils \
     libmedia \
-    libbinder \
-    libaudiopolicymanagerdefault
+    libbinder
+#    libaudiopolicymanagerdefault
 
 LOCAL_C_INCLUDES := \
     external/tinyalsa/include \
     $(TOPDIR)frameworks/av/services/audiopolicy
 
-LOCAL_MODULE := libaudiopolicymanager
-LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE := libaudiopolicymanager
+#LOCAL_MODULE_TAGS := optional
 
-include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)
