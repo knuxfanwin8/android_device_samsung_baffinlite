@@ -113,6 +113,7 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 BOARD_RIL_CLASS := ../../../device/samsung/baffinlite/ril/
 
 # Recovery
+RECOVERY_VARIANT := twrp
 TARGET_RECOVERY_FSTAB := device/samsung/baffinlite/rootdir/fstab.java_ss_baffinlite
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 
@@ -157,3 +158,16 @@ BOARD_SEPOLICY_UNION += \
 
 TW_THEME := portrait_mdpi
 
+# TWRP
+DEVICE_RESOLUTION := 480x800
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
+HAVE_SELINUX := false
+BOARD_SUPPRESS_SECURE_ERASE := true
+TW_INCLUDE_JB_CRYPTO := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_NO_CPU_TEMP := true
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
