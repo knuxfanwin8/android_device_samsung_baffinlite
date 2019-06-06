@@ -17,6 +17,9 @@ TARGET_CPU_VARIANT := cortex-a7
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_NEON := true
 
+TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+
 TARGET_BOOTLOADER_BOARD_NAME := java
 
 BOARD_KERNEL_CMDLINE := enforcing=0 androidboot.selinux=permissive
@@ -166,6 +169,7 @@ BOARD_HAS_NO_REAL_SDCARD := true
 HAVE_SELINUX := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_INCLUDE_JB_CRYPTO := true
+TW_INCLUDE_CRYPTO := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_CPU_TEMP := true
 TW_INTERNAL_STORAGE_PATH := "/data/media"
