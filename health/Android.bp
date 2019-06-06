@@ -31,7 +31,7 @@ cc_binary {
     header_libs: ["libhealthd_headers"],
 
     // Uncomment the following to remove healthd from the build.
-    // overrides: [
-    //     "healthd",
-    // ],
+     overrides: [
+         "healthd",
+     ],
 }
