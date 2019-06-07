@@ -26,7 +26,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4404019200
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_baffinlite_defconfig
+TARGET_KERNEL_CONFIG := lineage_baffinlite_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/baffinlite
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
