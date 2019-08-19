@@ -1,1 +1,1 @@
-add_lunch_combo lineage_baffinlite-userdebug
+add_lunch_combo omni_baffinlite-userdebug

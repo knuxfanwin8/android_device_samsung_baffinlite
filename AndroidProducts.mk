@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_baffinlite.mk
+    $(LOCAL_DIR)/omni_baffinlite.mk

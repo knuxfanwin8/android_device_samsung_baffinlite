@@ -3,7 +3,7 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/samsung/baffinlite/BoardConfigVendor.mk
 
-RODUCT_NAME := lineage_baffinlite
+PRODUCT_NAME := omni_baffinlite
 PRODUCT_DEVICE := baffinlite
 BOARD_VENDOR := samsung
 
